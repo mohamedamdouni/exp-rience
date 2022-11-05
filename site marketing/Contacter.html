@@ -1,0 +1,91 @@
+<html>
+   <head>
+      <script type="text/javascript" src="code.js"></script>
+      
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" type="image/x-icon" href="15.png">
+      
+   </head>
+   <body class="body2"><header class="header2">
+
+    
+      <nav class="navbar">
+          <a href="index.html" class="logo">ME<span>XO</span></a>
+          <div class="nav-links">
+              <ul>
+                  <li class="active"> <a href="index.html">Home</a></li>
+                  <li><a href="service.html">Portfolio</a></li>
+                  <li><a href="Contacter.html">Contatctez-Nous</a></li>
+              </ul>
+                </div>
+                <img src="img1.jpg" alt="menu hamburger" class="menu-hamburger">
+      
+              </nav>
+  
+             
+          </header>
+              
+          <div class="title">
+            <h2 style="color: black;" >Contactez-nous</h2>
+            </div>
+            <div class="form" ></div>
+      <form name="myForm"  onsubmit="return validateForm()" method="post"  >
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" id="n" onchange="verif()" required
+                  placeholder="saisissez votre nom" name="name" class="long" />
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+         </script> 
+        
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" required
+                  placeholder="saisissez votre adresse email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+         <p style=" margin-left: 859px;
+         margin-top: -293px;  " class="j4">N’hésitez pas à nous contacter. Si vous voulez convenir d’un rendez vous,<br> nous serons ravis de vous recevoir.</p>
+      </form>
+      
+      <script>
+         const menuHamburger =document.querySelector(".menu-hamburger")
+         const navLinks = document.querySelector(".nav-links")  
+         menuHamburger.addEventListener('click',()=>{
+             navLinks.classList.toggle('mobile-menu')
+         })
+     </script>
+   </body>
+</html>
